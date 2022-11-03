@@ -48,7 +48,10 @@ I , also wrote test for all endpoints.
 
 SETUP
 
-Install NodeJS, mongodb,express 
-pull this repo
-update config.env with config.env.example
-run npm run start for production or npm run start:dev for development
+Install NodeJS, mongodb,express .
+
+pull this repo.
+
+update config.env with config.env.example.
+
+run npm run start for production or npm run start:dev for development.
