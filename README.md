@@ -44,3 +44,11 @@ When a single blog is requested, the api should return the user information(the 
 Come up with any algorithm for calculating the reading_time of the blog.
 
 I , also wrote test for all endpoints.
+
+
+SETUP
+
+Install NodeJS, mongodb,express 
+pull this repo
+update config.env with config.env.example
+run npm run start for production or npm run start:dev for development
