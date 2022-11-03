@@ -2,10 +2,14 @@
 
 This blog passes all the test as required:
 
-Users  have a first_name, last_name, email, password, (you can add other attributes you want to store about the user)
-A user is able to sign up and sign in into the blog app
-I used JWT as authentication strategy and expire the token after 1 hour
- blogs are can be in two states; draft and published
+Users  have a first_name, last_name, email, password, (you can add other attributes you want to store about the user).
+
+A user is able to sign up and sign in into the blog app.
+
+I used JWT as authentication strategy and expire the token after 1 hour.
+
+ blogs are can be in two states; draft and published.
+ 
 Logged in and not logged in users should be able to get a list of published blogs created
 Logged in and not logged in users should be able to to get a published blog
 Logged in users should be able to create a blog.
