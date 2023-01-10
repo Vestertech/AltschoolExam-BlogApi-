@@ -5,37 +5,36 @@ const userSchema = new mongoose.Schema(
   {
     first_name: {
       type: String,
-      required: [true, "Enter your first name"],
-      
+      required: [true, 'Enter your first name'],
     },
     last_name: {
       type: String,
-      required: [true, "Enter your last name"],
-      
+      required: [true, 'Enter your last name'],
     },
     email: {
       type: String,
-      required: [true, "Enter your email"],
+      required: [true, 'Enter your email'],
       unique: true,
-      validate: [validator.isEmail, "Enter a valid email"],
+      lowercase: true,
+      validate: [validator.isEmail, 'Enter a valid email'],
     },
     password: {
       type: String,
-      required: [true, "Enter a password"],
+      required: [true, 'Enter a password'],
       minlength: [
         10,
-        "A user password must have more or equal to 10 characters",
+        'A user password must have more or equal to 10 characters',
       ],
       select: false,
     },
     passwordConfirm: {
       type: String,
-      required: [true, "User must Confirm their password"],
+      required: [true, 'User must Confirm their password'],
       validate: {
         validator: function (el) {
           return el === this.password;
         },
-        message: "Passwords do not match!",
+        message: 'Passwords do not match!',
       },
     },
   },

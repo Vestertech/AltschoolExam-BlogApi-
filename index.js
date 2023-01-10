@@ -3,6 +3,8 @@ const dotenv = require("dotenv");
 dotenv.config({ path: "./config.env" });
 const app = require("./app");
 
+const mongoUrl = process.env.MONGO_URL;
+
 mongoose
   .connect(process.env.MONGO_URL, {
     useUnifiedTopology: true,
