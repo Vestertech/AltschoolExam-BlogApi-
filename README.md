@@ -18,8 +18,7 @@ This blog passes all the test as required:
 * The endpoint should be paginated
 * It should be filterable by state
 * Blogs created should have title, description, tags, author, timestamp, state, read_count, reading_time and body.
-* The list of blogs endpoint that can be accessed by both logged in and not logged in users should be paginated, 
-* default it to 20 blogs per page. 
+* The list of blogs endpoint that can be accessed by both logged in and not logged in users should be paginated,  default it to 20 blogs per page. 
 * It should also be searchable by author, title and tags.
 * It should also be orderable by read_count, reading_time and timestamp
 * When a single blog is requested, the api should return the user information(the author) with the blog. The read_count of the blog too should be updated by 1
