@@ -23,10 +23,10 @@ exports.getAllBlogs = async (req, res, next) => {
       res.status(401).json({ status: 'Failed', message: err.message });
   }
 }
-    exports.setAuthorId = catchAsync(async (req, res, next) => {
+    exports.setAuthorId = async (req, res, next) => {
       req.body.author = req.user.id;
       next();
-    });
+    };
 exports.createBlog = async (req, res, next) => {
     try {
       const newBlogToCreate = {
